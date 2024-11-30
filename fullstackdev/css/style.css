@@ -1,130 +1,96 @@
-/* Ümumi Stil */
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      line-height: 1.6;
-    }
-    
-    /* Header (Başlıq və Naviqasiya) */
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    header h1 {
-      font-size: 2.5rem;
-    }
-    
-    nav ul {
-      list-style: none;
-      padding: 10px;
-    }
-    
-    nav ul li {
-      display: inline-block;
-      margin-right: 15px;
-    }
-    
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    
-    nav ul li a:hover {
-      color: #ff6347;
-    }
-    
-    /* Main Content */
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    .blog-post {
-      background-color: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    .blog-post h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-    
-    .date {
-      font-size: 0.9rem;
-      color: #777;
-    }
-    
-    .content {
-      font-size: 1rem;
-      margin: 20px 0;
-    }
-    
-    .read-more {
-      color: #ff6347;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    
-    .read-more:hover {
-      color: #e60000;
-    }
-    
-    /* Footer */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-    
-    footer a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    
-    footer a:hover {
-      color: #ff6347;
-    }
-    
-    /* Responsive dizayn (Media Queries) */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-    
-      nav ul {
-        padding: 5px;
-      }
-    
-      nav ul li {
-        display: block;
-        margin: 10px 0;
-      }
-    
-      main {
-        padding: 10px;
-      }
-    
-      .blog-post {
-        padding: 15px;
-      }
-    }
-    
+/*button{
+  background-color: #007BFF;
+  color: white;
+  border:none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s eses, transform 0.3s eses;
+  box-shadow: 0px 4px 6px rgba(0,0, 0, 0.1);
+}
+
+button:hover{
+  background-color: #0056b3;
+  box-shadow: 0px 6px 8px rgba(0,0, 0, 0.2);
+  transform: scale(1.05);
+}*/
+
+/*body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+}
+
+.kart1 {
+  background-color: #FF6F61;
+  width: 100px;
+  height: 100px;
+}
+
+.kart2 {
+  background-color: #6B5B95;
+  width: 120px;
+  height: 120px;
+}
+
+.kart3 {
+  background-color: #88B04B;
+  width: 140px;
+  height: 140px;
+}
+
+.kart4 {
+  background-color: #F7CAC9;
+  width: 160px;
+  height: 160px;
+}
+
+.kart5 {
+  background-color: #92A8D1;
+  width: 180px;
+  height: 180px;
+}*/
+
+body{
+  background-color: rgb(209, 197, 197);
+}
+h1{
+  text-align: center;
+}
+.Gallery{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);/*sutunlarin sayini gosterir*/
+  gap: 25px;/*sutunlar arasinda mesafeni teyin edir*/
+}
+
+.Gallery img{
+  width: 50%;
+  height: auto;/*Seklin olcusunu konteynere uygunlasdirir.*/
+}
+
+.Gallery img{
+  transition:transform 0.3s ease, box-shadow 0.3s ease; /*kecid effekti*/
+}
+.Gallery img:hover{
+  transform: scale(1.2);/*sekili boyudur*/
+  box-shadow: 0.4px 8px rgba(0,0,0, 0.6);/*kolge effekti
+}
